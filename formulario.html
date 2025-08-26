@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="menu">
+      <a href="index.html">Página Inicial</a>
+      <a href="ajudar.html">Formas de Ajudar</a>
+      <a href="cachorros.html">Faça uma adoção</a>
+      <a href="noticias.html">Notícias</a>
+    </nav>
+    <img src="imagens/logo_roxa.png" alt="Logo ACAPRA" class="logo">
+  </header>
+
+  <div class="container">
+    <h2>Formulário de Contato</h2>
+
+    <form action="#" method="post" id="form-contato">
+      <div class="form-left">
+        <div class="form-group">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="animal">Qual animal deseja adotar? <span style="font-style: italic; color: gray;">(Nome do animal)</span>:</label>
+          <input type="text" id="animal" name="animal" required>
+        </div>
+      </div>
+
+      <div class="form-right">
+        <div class="form-group">
+          <label for="mensagem">Mensagem: <span style="font-style: italic; color: gray;">(Opcional)</span></label>
+          <textarea id="mensagem" name="mensagem" rows="10"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <footer class="footer-botao">
+    <a href="index.html" class="botao-link">Voltar</a>
+    <a href="cachorros.html" class="botao-link">Faça uma adoção</a>
+    <p>ACAPRA Brusque 2025</p>
+  </footer>
+
+</body>
+</html>
+
+
