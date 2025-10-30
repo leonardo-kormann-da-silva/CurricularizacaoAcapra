@@ -247,3 +247,78 @@ button:hover, .botao-link:hover {
   margin: 0;
   font-weight: bold;
 }
+
+/* Estilos originais para maus-tratos (mantidos intactos) */
+.maus-tratos .conteudo-mt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.maus-tratos .conteudo-mt .texto {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.maus-tratos .conteudo-mt .denuncia {
+  flex: 1;
+}
+
+.maus-tratos .destaque {
+  font-weight: bold;
+  color: #6c2ca8;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Novos estilos adicionados APENAS para a página de maus-tratos (usando .maus-tratos-layout para isolar) */
+.maus-tratos-layout .conteudo-mt {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.maus-tratos-layout .conteudo-mt .texto,
+.maus-tratos-layout .conteudo-mt .denuncia {
+  flex: 1;
+  min-width: 300px;
+}
+
+.maus-tratos-layout .historias {
+  margin-bottom: 40px;
+}
+
+.maus-tratos-layout .chamada-acao {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.maus-tratos-layout .chamada-acao h3 {
+  margin-bottom: 15px;
+}
+
+.maus-tratos-layout .chamada-acao p {
+  margin-bottom: 20px;
+}
+
+.maus-tratos-layout .chamada-acao .botao-link {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .maus-tratos-layout .conteudo-mt {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .maus-tratos-layout .chamada-acao {
+    padding: 15px;
+  }
+}
